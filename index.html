@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#DBCBF3">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Rizwan Shah Portfolio </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Rizwan Shah</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__greeting">Hello, I'm</h1>
+                    <h2 class="home__name">Rizwan Shah</h2>
+                    <h3 class="home__education">Flutter Developer</h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/mycv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/perfil.jpg" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/rizwan-shah-a52a881b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://instagram.com/rizwanshah1234?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"
+                        class="home__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100005676348753&mibextid=ZbWKwL" target="_blank"
+                        class="home__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://wa.me/qr/7SWCAQVXSWKLB1" target="_blank" class="home__social-link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">2+ Years Working</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">10+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        I'm Rizwan Shah, a dedicated Flutter developer with a passion for crafting exceptional mobile
+                        applications. With a deep appreciation for clean and efficient code, I specialize in creating
+                        sleek and user-friendly experiences. My journey in app development has been defined by a
+                        commitment to continuous learning and a love for problem-solving.
+
+                        I thrive on transforming innovative ideas into reality, leveraging the power of Flutter to build
+                        natively compiled applications for mobile, web, and desktop. Whether it's refining user
+                        interfaces, optimizing performance, or collaborating with cross-functional teams, I bring a
+                        holistic approach to software development. Explore my portfolio to see my work and feel free to
+                        reach out to discuss how we can collaborate on your next project.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+
+
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Flutter Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Frontend</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">StateManagement</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Api Integration</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Responsive UI</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Dart</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Website Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Frontend</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check'></i>
+
+                            <div>
+                                <h3 class="skills__name">Firebase</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check'></i>
+
+                            <div>
+                                <h3 class="skills__name">Mongo DB</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Mobile Application <br> Development</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Application Development</h3>
+
+                            <p class="services__modal-description">
+                                As an experienced Flutter developer, I specialize in transforming your mobile app
+                                concepts into reality, delivering cross-platform applications with stunning UI/UX,
+                                optimal performance, and top-notch security. With a proven track record of successful
+                                projects and a commitment to on-time delivery, I'm your go-to partner for custom app
+                                solutions. Let's collaborate to create an exceptional mobile app that captivates users
+                                and sets you apart in the market. Contact me today, and together, we'll make your app
+                                vision a reality. Client satisfaction guaranteed.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can develop the Android App
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can develop the IOS App
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can develop the User Interfaces.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can develop the Responsive UI.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can integrate the API in the Application. </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can integrate the Firebase service.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can implement the State Management in Application.
+                                    </p>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">UI/UX <br> Designing</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">UI/UX Designing</h3>
+
+                            <p class="services__modal-description">
+                                I'm an experienced UI/UX designer who specializes in crafting engaging and visually
+                                appealing user interfaces, meticulously optimizing user experiences to make your app
+                                truly exceptional and memorable in the competitive market.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interfaces.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Web Page design and development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I create the UX element interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I develop Mobile App UI/UX Design.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Website <br> Development</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Website Development</h3>
+
+                            <p class="services__modal-description">
+                                I'm an experienced Flutter developer with a focus on creating responsive and visually
+                                appealing websites, combining the power of Flutter with web technologies to deliver
+                                outstanding online experiences for your business or project.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can Develop the static Website.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        i can design web page and development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I can integrate the database with Website
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+
+                                        I can integrate the API in the Website.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+
+                                        I can host the static website.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.mobile'>Mobile</span>
+                <span class=" work__item" data-filter='.web'>Website</span>
+                <span class=" work__item" data-filter='.ui'>Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work1.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Traveling App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work2.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Service Provider App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work3.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Entertainment App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More<i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <!-- <section class="testimonial section">
+            <span class="section__subtitle">My clients say</span>
+            <h2 class="section__title">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Jhon Doe</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Ada Hill</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Jessica Park</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section> -->
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+
+            <h2 class="contact__title contact__title-info">Talk to me</h2>
+
+            <div class="contact__container ">
+                <div class="contact__info contact__container container grid">
+                    <div class="contact__card">
+                        <i class='bx bx-mail-send contact__card-icon'></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">shahrizwan403@gmail.com</span>
+
+                        <a href="mailto:shahrizwan403@gmail.com" target="_blank" class="contact__button">
+                            Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class='bx bxl-whatsapp contact__card-icon'></i>
+                        <h3 class="contact__card-title">Whatsapp</h3>
+                        <span class="contact__card-data">+923060098175</span>
+
+                        <a href="https://api.whatsapp.com/send?phone=+923060098175&text=Hey there!" target="_blank"
+                            class="contact__button">
+                            Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class='bx bxl-linkedin contact__card-icon'></i>
+                        <h3 class="contact__card-title">Linkedin</h3>
+                        <span class="contact__card-data">Rizwan Shah</span>
+
+                        <a href="https://www.linkedin.com/in/rizwan-shah-a52a881b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="contact__button">
+                            Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Rizwan Shah</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://www.facebook.com/profile.php?id=100005676348753&mibextid=ZbWKwL" target="_blank"
+                        class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/rizwan-shah-a52a881b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://instagram.com/rizwanshah1234?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"
+                        class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
