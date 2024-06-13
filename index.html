@@ -73,16 +73,44 @@
 
         </nav>
     </header>
+    <script>
+        window.onload = function () {
+            const typeWriter = (element, text, delay = 200) => {
+                let i = 0;
+                const typing = setInterval(() => {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typing);
+                    }
+                }, delay);
+            };
 
+            const delayBetweenTexts = 1000; // 1 second delay between each text
+            setTimeout(() => typeWriter(document.getElementById('greeting'), 'Hello, I\'m', 100), 0);
+            setTimeout(() => typeWriter(document.getElementById('name'), 'Rizwan Shah', 100), delayBetweenTexts);
+            setTimeout(() => typeWriter(document.getElementById('education1'), 'AI-Driven Flutter Developer', 100), delayBetweenTexts * 2);
+            setTimeout(() => typeWriter(document.getElementById('education2'), 'Specializing in Machine Learning', 100), delayBetweenTexts * 5);
+            setTimeout(() => typeWriter(document.getElementById('education3'), '& Deep Learning', 100), delayBetweenTexts * 8);
+        }
+    </script>
     <!--=============== MAIN ===============-->
     <main class="main">
         <!--=============== HOME ===============-->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__greeting">Hello, I'm</h1>
-                    <h2 class="home__name">Rizwan Shah</h2>
-                    <h3 class="home__education">Flutter Developer</h3>
+                    <h1 class="home__greeting"><span id="greeting"></span></h1>
+                    <h2 class="home__name"><span id="name"></span></h2>
+                    <h3 class="home__education">
+                        <span id="education1"></span>
+                        <br>
+                        <span id="education2"></span>
+
+                        <br>
+                        <span id="education3"></span>
+                    </h3>
 
                     <div class="home__button">
                         <a download="" href="assets/pdf/mycv.pdf" class="button button--ghost">
@@ -131,14 +159,14 @@
             <h2 class="section__title">About Me</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
+                <img src="assets/img/perfil.jpg" alt="" class="about__img">
 
                 <div class="about__data">
                     <div class="about__info">
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
                             <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">2+ Years Working</span>
+                            <span class="about__subtitle">2 Years Working</span>
                         </div>
                         <div class="about__box">
                             <i class='bx bx-briefcase-alt about__icon'></i>
@@ -153,16 +181,23 @@
                     </div>
 
                     <p class="about__description">
-                        I'm Rizwan Shah, a dedicated Flutter developer with a passion for crafting exceptional mobile
-                        applications. With a deep appreciation for clean and efficient code, I specialize in creating
-                        sleek and user-friendly experiences. My journey in app development has been defined by a
-                        commitment to continuous learning and a love for problem-solving.
+                        I'm Rizwan Shah, a dedicated and results-driven Flutter developer with expertise in AI, machine
+                        learning, and deep learning. With a passion for crafting exceptional mobile applications, I
+                        thrive on transforming innovative ideas into reality. I specialize in creating sleek and
+                        user-friendly experiences through clean and efficient code. <br> <br>
 
-                        I thrive on transforming innovative ideas into reality, leveraging the power of Flutter to build
-                        natively compiled applications for mobile, web, and desktop. Whether it's refining user
-                        interfaces, optimizing performance, or collaborating with cross-functional teams, I bring a
-                        holistic approach to software development. Explore my portfolio to see my work and feel free to
-                        reach out to discuss how we can collaborate on your next project.
+                        My journey in app development is defined by a commitment to continuous learning and a love for
+                        problem-solving. I bring a robust work ethic and a proven track record of delivering
+                        high-quality projects. Known for my exceptional time-management skills and unwavering commitment
+                        to skill enhancement, I excel both independently and collaboratively. <br> <br>
+
+                        I leverage the power of Flutter to build natively compiled applications for mobile, web, and
+                        desktop. Whether it's refining user interfaces, optimizing performance, or collaborating with
+                        cross-functional teams, I bring a holistic approach to software development. Explore my
+                        portfolio to see my work and feel free to reach out to discuss how we can collaborate on your
+                        next project.
+
+
                     </p>
 
                     <a href="#contact" class="button about__button-contact">Contact Me</a>
@@ -245,6 +280,162 @@
                 </div>
 
 
+                <div class="skills__content">
+                    <h3 class="skills__title">Data Pre-Processing</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Data Preprocessing</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Data Cleaning</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Data Augmentation</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Insightful Datasets</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Machine Learning</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Linear Regression</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">SVM</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">LGBM</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">KNN</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ANN</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Model Evaluation</h3>
+                                    <span class="skills__level">Proficient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Deep Learning</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Deep Learning Models</h3>
+                                    <span class="skills__level">Skilled</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Classification Tasks</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Model Selection</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Efficient Classification</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="skills__content">
                     <h3 class="skills__title">Website Development</h3>
 
@@ -441,7 +632,7 @@
                 </div>
 
                 <div class="services__card">
-                    <h3 class="services__title">UI/UX <br> Designing</h3>
+                    <h3 class="services__title">Data Science</h3>
 
                     <span class="services__button">
                         See More <i class='bx bx-right-arrow services__icon'></i>
@@ -451,47 +642,48 @@
                         <div class="services__modal-content">
                             <i class='bx bx-x services__modal-close'></i>
 
-                            <h3 class="services__modal-title">UI/UX Designing</h3>
+                            <h3 class="services__modal-title">Data Science</h3>
 
                             <p class="services__modal-description">
-                                I'm an experienced UI/UX designer who specializes in crafting engaging and visually
-                                appealing user interfaces, meticulously optimizing user experiences to make your app
-                                truly exceptional and memorable in the competitive market.
+                                I'm an experienced Data Scientist who specializes in leveraging machine learning and
+                                deep learning models for data analysis and predictive modeling, ensuring clean,
+                                accurate, and insightful datasets for effective model training.
                             </p>
 
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        I develop the user interfaces.
+                                        I develop machine learning models.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        Web Page design and development.
+                                        I implement deep learning models for classification tasks.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        I create the UX element interactions.
+                                        I perform data preprocessing and data augmentation.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        I position your company brand.
+                                        I ensure clean, accurate, and insightful datasets.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        I develop Mobile App UI/UX Design.
+                                        I optimize user experiences to make your app truly exceptional and memorable in
+                                        the competitive market.
                                     </p>
                                 </li>
                             </ul>
@@ -499,6 +691,116 @@
                     </div>
                 </div>
 
+                <div class="services__card">
+                    <h3 class="services__title">Machine Learning</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Machine Learning</h3>
+
+                            <p class="services__modal-description">
+                                I'm an experienced Machine Learning Engineer who specializes in designing and
+                                implementing a variety of machine learning models for classification, regression, and
+                                clustering tasks, ensuring accurate and efficient results across diverse datasets and
+                                domains.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I develop machine learning models for classification tasks.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I implement regression models for prediction tasks.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I design clustering models for data segmentation.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I ensure accurate and efficient results across diverse datasets and domains.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I optimize machine learning models for performance and scalability.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Deep Learning</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Deep Learning</h3>
+
+                            <p class="services__modal-description">
+                                I'm an experienced Deep Learning Engineer who specializes in leveraging a variety of
+                                deep-learning models for classification tasks, ensuring accurate and efficient
+                                classification results across diverse datasets and domains.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I develop deep learning models for classification tasks.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I implement appropriate models to achieve accurate results.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I ensure efficient classification results across diverse datasets and domains.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I optimize deep learning models for performance and scalability.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="services__card">
                     <h3 class="services__title">Website <br> Development</h3>
 
@@ -569,7 +871,7 @@
                 <span class="work__item active-work" data-filter='all'>All</span>
                 <span class=" work__item" data-filter='.mobile'>Mobile</span>
                 <span class=" work__item" data-filter='.web'>Website</span>
-                <span class=" work__item" data-filter='.ui'>Design</span>
+                <span class=" work__item" data-filter='.ai'>Deep Learning </span>
             </div>
 
             <div class="work__container container grid">
@@ -577,6 +879,16 @@
                     <img src="assets/img/work1.png" alt="" class="work__img">
 
                     <h3 class="work__title">Traveling App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work4.png" alt="" class="work__img">
+
+                    <h3 class="work__title">E-Commerce App</h3>
 
                     <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
                         View More <i class='bx bx-right-arrow work__icon'></i>
@@ -594,6 +906,25 @@
                 </div>
 
                 <div class="work__card mix mobile">
+                    <img src="assets/img/work5.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Car Wash App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix ai">
+                    <img src="assets/img/work6.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Marrow Master App</h3>
+
+                    <a href="https://github.com/rizwanshah123" target="_blank" class="work__button">
+                        View More <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
                     <img src="assets/img/work3.png" alt="" class="work__img">
 
                     <h3 class="work__title">Entertainment App</h3>
@@ -610,7 +941,7 @@
             </div>
         </section>
 
-        <!--=============== TESTIMONIALS ===============-->
+        <!-- =============== TESTIMONIALS ===============-->
         <!-- <section class="testimonial section">
             <span class="section__subtitle">My clients say</span>
             <h2 class="section__title">Testimonials</h2>
