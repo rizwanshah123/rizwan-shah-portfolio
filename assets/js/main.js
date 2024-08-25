@@ -32,6 +32,32 @@ modalClose.forEach((mc) => {
   });
 });
 
+
+/*=============== WORK MODAL ===============*/
+const workModalViews = document.querySelectorAll(".work__modal"),
+  workModalBtns = document.querySelectorAll(".work__button"),
+  workModalClose = document.querySelectorAll(".work__modal-close");
+
+let openWorkModal = function (modalIndex) {
+  workModalViews[modalIndex].classList.add("active-modal");
+};
+
+workModalBtns.forEach((mb, i) => {
+  mb.addEventListener("click", () => {
+    openWorkModal(i);
+  });
+});
+
+workModalClose.forEach((mc) => {
+  mc.addEventListener("click", () => {
+    workModalViews.forEach((mv) => {
+      mv.classList.remove("active-modal");
+    });
+  });
+});
+
+
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 let mixer = mixitup(".work__container", {
