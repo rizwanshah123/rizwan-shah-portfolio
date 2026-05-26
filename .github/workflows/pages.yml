@@ -1,4 +1,4 @@
-name: Deploy Portfolio to GitHub Pages
+name: Deploy Portfolio to gh-pages
 
 on:
   push:
@@ -7,9 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -17,19 +15,39 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
+      - name: Publish static files
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          mkdir -p /tmp/portfolio-pages
+          rsync -av \
+            --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            ./ /tmp/portfolio-pages/
+
+          touch /tmp/portfolio-pages/.nojekyll
+
+          git fetch origin gh-pages || true
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+
+          find . -mindepth 1 \
+            ! -path "./.git" \
+            ! -path "./.git/*" \
+            -exec rm -rf {} +
+
+          rsync -av /tmp/portfolio-pages/ ./
+          git add .
+          git commit -m "Deploy portfolio to GitHub Pages" || echo "No changes to deploy"
+          git push origin gh-pages
